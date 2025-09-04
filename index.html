@@ -1,0 +1,135 @@
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Web Page</title>
+    </head>
+    <body>
+        <header>
+            Bienvenue
+        </header>
+        <p>
+            Ceci est un paragraphe
+        </p>
+        <h2>
+            En tete
+        </h2>
+        <ul>
+            <li>point 1</li>
+            <li>point 2</li>
+            <li>point 3</li>
+            <li>point 4</li>
+        </ul>
+        <figure>
+            <img src="./zoroPanl.webp" alt="Image">
+            <figcaption>image exemple</figcaption>
+        </figure>
+
+        <p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1" target="_blank" rel="noopener noreferrer">attention...</a>
+        </p>
+        
+        <h2>Formulaire</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required />
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="age">Age :</label>
+            <input type="number" id="age" name="age" min="1" max="120" required />
+            
+            <button type="submit">Soumettre</button>
+        </form>
+        <br/>
+        <br/>
+
+        <!-- -->
+        <header>
+            <h1>Produits</h1>
+        </header>
+        <h2>Liste</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Portable</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                </tr>
+                <tr>
+                    <th>Telephone</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                </tr>
+                <tr>
+                    <th>Balai</th>
+                    <th>Description</th>
+                    <th>Prix</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Ajouter un produit</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" required/>
+
+            <label for="desc">Description</label>
+            <input type="text" id="desc" name="desc" required/>
+
+            <label for="prix">Prix</label>
+            <input type="number" id="prix" name="prix" required/>
+
+            <label for="categorie">Categorie</label>
+            <select id="categorie" name="categorie" required>
+                <option value="informatique">Informatique</option>
+                <option value="accessoire">Accessoire</option>
+                <option value="maison">Maison</option>
+            </select>
+            <br/>
+            <button type="submit">Ajouter</button>
+        </form>
+
+        <h1>Page Structuree</h1>
+        <p>Exemple d'utilisation de balise</p>
+
+        <h2>Titre h2</h2>
+        <p>Exemple de balise h2</p>
+
+        <h2>Paragraphe</h2>
+        <p>Ceci est un paragraphe p</p>
+
+        <h2>Liste</h2>
+        <p>2 types de liste</p>
+        <ul>
+            <li>Non ordonner comme celle la</li>
+            <li>et ordonner</li>
+        </ul>
+        <h3>Voila une ordonnee</h3>
+        <ol>
+            <li>1er</li>
+            <li>2e</li>
+            <li>3e</li>
+        </ol>
+
+        <nav>
+            <a href="acceuil.html">Acceuil</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <h1>Recherche</h1>
+        <p>Formulaire de recherche</p>
+        <form>
+            <label for="query">Votre Recherche</label>
+            <input type="text" id="query" name="query" placeholder="Entrez..." required/>
+            <button type="submit">Rechercher</button>
+        </form>
+    </body>
+</html>
