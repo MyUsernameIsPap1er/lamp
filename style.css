@@ -1,0 +1,64 @@
+/*
+# : id selector
+. : class selector
+A B : leaf selector (selects B)
+A > B : direct leaf selector (only if 1st leaf)
+[] : attribute selector
+: : state selector
+:: : pseudo element selector
+*/
+#acceuil {
+    background-color: lightgrey;
+}
+p#style {
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+li::marker {
+    color:orange;
+    font-size: larger;
+}
+a {
+    color: purple;
+    font-size: smaller;
+}
+button {
+    background-color: white;
+}
+div#navigationBar:hover  a {
+    background-color: black;
+    color: white;
+}
+/*contact*/
+div#message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    background-color: lightgrey;
+}
+#field {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+}
+#field label {
+    font-weight: 600;
+}
+form {
+    align-self: stretch;
+}
+input#message{
+    height: 50px;
+}
+button {
+    color: white;
+    background-color: darkgreen;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin:5px 450px 0px 450px;
+}
