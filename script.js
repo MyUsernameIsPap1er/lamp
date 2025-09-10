@@ -69,24 +69,47 @@ document.addEventListener("DOMContentLoaded", ex10);
 function ex10() {
     let marque = document.getElementById("marque");
     let modele = document.getElementById("modele");
-    switch (marque.value){
-        case "Ford":
-            modele.add(new Option("F-150", "F-150"));
-            modele.add(new Option("Model T", "Model T"));
-            modele.add(new Option("Mustang", "Mustang"));
-            break;
-        case "Dodge":
-            modele.add(new Option("Ram 1500","Ram 1500"));
-            modele.add(new Option( "Grand Caravan", "Grand Caravan"));
-            modele.add(new Option("Charger", "Charger"));
-            break;
-        case "Chevrolet":
-            modele.add(new Option("Silverado", "Silverado"));
-            modele.add(new Option( "Impala", "Impala"));
-            modele.add(new Option( "Corvette", "Corvette"));
-            break;
-        default:
-            break
+    marque.addEventListener("change",function () {
+        modele.innerHTML = "";
+
+        switch (marque.value){
+            case "Ford":
+                modele.add(new Option("F-150", "F-150"));
+                modele.add(new Option("Model T", "Model T"));
+                modele.add(new Option("Mustang", "Mustang"));
+                break;
+            case "Dodge":
+                modele.add(new Option("Ram 1500","Ram 1500"));
+                modele.add(new Option("Grand Caravan", "Grand Caravan"));
+                modele.add(new Option("Charger", "Charger"));
+                break;
+            case "Chevrolet":
+                modele.add(new Option("Silverado", "Silverado"));
+                modele.add(new Option("Impala", "Impala"));
+                modele.add(new Option("Corvette", "Corvette"));
+                break;
+            default:
+                break
+        }
+    })
+}
+function Creer () {
+    let marque = document.getElementById("marque");
+    let modele = document.getElementById("modele");
+    let annee = document.getElementById("10annee");
+    class Car {
+        constructor(marque, modele, annee) {
+            this.marque = marque;
+            this.modele = modele;
+            this.annee = annee;
+        }
+
+        toString() {
+            return this.annee+" "+this.marque+" "+this.modele;
+        }
     }
-    
+
+    let nouvelleVoiture = Car(marque.value, modele.value, annee.value);
+
+    document.getElementById("ex10").innerText = nouvelleVoiture.toString();
 }

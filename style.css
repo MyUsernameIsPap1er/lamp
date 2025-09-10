@@ -74,7 +74,7 @@ button#contact {
     display: grid;
     grid-auto-flow: column;
     grid-auto-rows: 100px;
-    grid-template-columns: repeat(auto-fill 150px);
+    height: 100vh;
     gap: 10px;
 }
 #about > div {
