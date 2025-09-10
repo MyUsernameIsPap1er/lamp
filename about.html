@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Web Page</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        
+        <script type="text/javascript" src="./script.js"></script>
+        <div id="navigationBar">
+            <nav>
+                <a href="index.html">Index</a>
+                <a href="contact.html">Contact</a>
+                <a href="acceuil.html">Acceuil</a>
+            </nav>
+        </div>
+        <div id="about">
+
+            <div>
+                <h2>ex.1</h2><br>
+                <form onSubmit="return false;">
+                    <label>n1 :</label>
+                    <input id="n1" type="number"><br>
+
+                    <label>n2 :</label>
+                    <input id="n2" type="number"><br>
+
+                    <button onclick="calculerProduit()">Calculer</button>
+                </form>
+                <h1 id="res"></h1>
+            </div>
+
+            <div>
+            <!---->
+                <h2>ex.2</h2>
+                <h1>5 a 15</h1>
+                <button onclick="ex2()">Lancer</button>
+                <div id="ex2"></div>
+            </div>
+
+            <div>
+                <!---->
+                <h2>ex.3</h2><br>
+                <h1>Verif. num</h1>
+                <form onSubmit="return false;">
+                    <label>Num</label>
+                    <input type="number" id="ex3num">
+                    <button onclick="ex3()">Lancer</button>
+                </form><br>
+                <div id="ex3"></div>
+            </div>
+
+            <div>
+                <!---->
+                <h2>ex.4</h2><br>
+                <h1>10 a 1</h1>
+                <button onclick="ex4()">Lancer</button>
+                <div id="ex4"></div>
+            </div>
+
+            <div>
+                <!---->
+                <h2>ex.5</h2><br>
+                <h1>moyenne</h1>
+                <from>
+                    <label>n1</label>
+                    <input id="5n1" type="number"><br>
+                    <label>n2</label>
+                    <input id="5n2" type="number"><br>
+                    <label>n3</label>
+                    <input id="5n3" type="number">
+                    <button onClick="ex5()">Lancer</button>
+                </from>
+                <div id="ex5"></div>
+            </div>
+
+            <div id="ex10">
+                
+                <!---->
+                <h2>ex.10</h2><br>
+                <h1>Cree ta voiture</h1>
+                <form>
+                    <label>marque</label>
+                    <select id="marque">
+                        <option value=""></option>
+                        <option value="Ford">Ford</option>
+                        <option value="Dodge">Dodge</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                    </select><br>
+                    <label>modele</label>
+                    <select id="modele">
+                    </select><br>
+                    <label>annee</label>
+                    <input id="10annee" type="number">
+
+                </form>
+
+            </div>
+        </div>
+
+
+    </body>
+</html>
