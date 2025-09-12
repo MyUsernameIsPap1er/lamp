@@ -8,6 +8,7 @@ docker-compose.override.yml
 *.sql
 *.sql.gz
 *.dump
+!www/sql/*.sql
 
 /config/ssl/
 /config/php/php.ini
