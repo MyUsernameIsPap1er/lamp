@@ -8,13 +8,5 @@
   <body>
     <h1>Users</h1>
     <ul id="users"></ul>
-
-    <h2>Add User</h2>
-    <form id="addUserForm">
-      <input type="text" id="name" placeholder="Name" required />
-      <input type="email" id="email" placeholder="Email" required />
-      <button id="addUserButton">Add User</button>
-    </form>
-    <script src="/assets/js/app.js"></script>
   </body>
 </html>
